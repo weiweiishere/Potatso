@@ -35,7 +35,7 @@ public let kProxyServiceVPNStatusNotification = "kProxyServiceVPNStatusNotificat
 
 open class Manager {
     
-    public static let sharedManager = Manager()
+    open static let sharedManager = Manager()
     
     open fileprivate(set) var vpnStatus = VPNStatus.off {
         didSet {
@@ -43,7 +43,7 @@ open class Manager {
         }
     }
     
-    public let wormhole = MMWormhole(applicationGroupIdentifier: Potatso.sharedGroupIdentifier(), optionalDirectory: "wormhole")
+    open let wormhole = MMWormhole(applicationGroupIdentifier: Potatso.sharedGroupIdentifier(), optionalDirectory: "wormhole")
 
     var observerAdded: Bool = false
     
