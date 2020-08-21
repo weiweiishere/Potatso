@@ -8,6 +8,7 @@ def library
     pod 'ICSMainFramework', :path => "./Library/ICSMainFramework/"
     pod 'MMWormhole', '~> 2.0.0'
     pod 'KeychainAccess'
+    pod 'Crashlytics', '~> 3.10.7'
 end
 
 def tunnel
@@ -36,7 +37,7 @@ target "Potatso" do
     pod 'ICSPullToRefresh', '~> 0.6'
     pod 'ISO8601DateFormatter', '~> 0.8'
     pod 'Alamofire'
-    pod 'ObjectMapper'
+    pod 'AlamofireObjectMapper', '~> 5.0'
     pod 'CocoaLumberjack/Swift', '~> 3.0.0'
     pod 'PSOperations'
     tunnel
