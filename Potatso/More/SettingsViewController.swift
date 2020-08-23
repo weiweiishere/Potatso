@@ -66,9 +66,9 @@ class SettingsViewController: FormViewController, MFMailComposeViewControllerDel
         section
             <<< ActionRow() {
                 $0.title = "Sync".localized()
-                $0.value = SyncManager.shared.currentSyncServiceType.rawValue
+                //rc: $0.value = SyncManager.shared.currentSyncServiceType.rawValue
             }.onCellSelection({ [unowned self] (cell, row) -> () in
-                SyncManager.shared.showSyncVC(inVC: self)
+                //rc: SyncManager.shared.showSyncVC(inVC: self)
             })
             <<< ActionRow() {
                 $0.title = "Import From URL".localized()

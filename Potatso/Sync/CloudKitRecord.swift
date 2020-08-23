@@ -12,14 +12,15 @@ import CloudKit
 import Realm
 import RealmSwift
 
-let potatsoZoneId = CKRecordZoneID(zoneName: "PotatsoCloud", ownerName: CKOwnerDefaultName)
+@available(iOS 10.0, *)
+let potatsoZoneId = CKRecordZone.ID(zoneName: "PotatsoCloud", ownerName: CKCurrentUserDefaultName)
 let potatsoDB = CKContainer.default().privateCloudDatabase
 let potatsoSubscriptionId = "allSubscription"
 
 public protocol CloudKitRecord {
     static var recordType: String { get }
     static var keys: [String] { get }
-    var recordId: CKRecordID { get }
+    var recordId: CKRecord.ID { get }
     func toCloudKitRecord() -> CKRecord
     static func fromCloudKitRecord(_ record: CKRecord) -> Self
 }
@@ -42,8 +43,13 @@ extension Proxy: CloudKitRecord {
         return basekeys + ["typeRaw", "name", "host", "port", "authscheme", "user", "password", "ota", "ssrProtocol", "ssrObfs", "ssrObfsParam"]
     }
 
-    public var recordId: CKRecordID {
-        return CKRecordID(recordName: uuid, zoneID: potatsoZoneId)
+    public var recordId: CKRecord.ID {
+        if #available(iOS 10.0, *) {
+            return CKRecord.ID(recordName: uuid, zoneID: potatsoZoneId)
+        } else {
+            //ww: Fallback on earlier versions
+            return CKRecord.ID(recordName: "<ios10")
+        }
     }
 
     public func toCloudKitRecord() -> CKRecord {
@@ -75,8 +81,13 @@ extension RuleSet: CloudKitRecord {
         return basekeys + ["editable", "name", "remoteUpdatedAt", "desc", "ruleCount", "isSubscribe", "isOfficial", "rulesJSON"]
     }
 
-    public var recordId: CKRecordID {
-        return CKRecordID(recordName: uuid, zoneID: potatsoZoneId)
+    public var recordId: CKRecord.ID {
+        if #available(iOS 10.0, *) {
+            return CKRecord.ID(recordName: uuid, zoneID: potatsoZoneId)
+        } else {
+            //ww: Fallback on earlier versions
+            return CKRecord.ID(recordName: "<ios10")
+        }
     }
 
     public func toCloudKitRecord() -> CKRecord {
@@ -108,8 +119,13 @@ extension ConfigurationGroup: CloudKitRecord {
         return basekeys + ["editable", "name", "defaultToProxy"]
     }
 
-    public var recordId: CKRecordID {
-        return CKRecordID(recordName: uuid, zoneID: potatsoZoneId)
+    public var recordId: CKRecord.ID {
+        if #available(iOS 10.0, *) {
+            return CKRecord.ID(recordName: uuid, zoneID: potatsoZoneId)
+        } else {
+            //ww: Fallback on earlier versions
+            return CKRecord.ID(recordName: "<ios10")
+        }
     }
 
     public func toCloudKitRecord() -> CKRecord {
@@ -132,7 +148,7 @@ extension ConfigurationGroup: CloudKitRecord {
         let realm = try! Realm()
         if let rulesUUIDs = record["proxies"] as? String {
             let uuids = rulesUUIDs.components(separatedBy: ",")
-            let rules = uuids.flatMap({ realm.objects(Proxy.self).filter("uuid = '\($0)'").first })
+            let rules = uuids.compactMap({ realm.objects(Proxy.self).filter("uuid = '\($0)'").first })
             
             for r in rules {
                 group.proxies.append(r)
@@ -140,7 +156,7 @@ extension ConfigurationGroup: CloudKitRecord {
         }
         if let rulesUUIDs = record["ruleSets"] as? String {
             let uuids = rulesUUIDs.components(separatedBy: ",")
-            let rules = uuids.flatMap({ realm.objects(RuleSet.self).filter("uuid = '\($0)'").first })
+            let rules = uuids.compactMap({ realm.objects(RuleSet.self).filter("uuid = '\($0)'").first })
             
             for r in rules {
                 group.ruleSets.append(r)
@@ -199,7 +215,7 @@ func changeLocalRecord(_ record: CKRecord) throws {
     try DBUtils.add(realmObject, setModified: false)
 }
 
-func deleteLocalRecord(_ recordID: CKRecordID) throws {
+func deleteLocalRecord(_ recordID: CKRecord.ID) throws {
     let id = recordID.recordName
     try DBUtils.hardDelete(id, type: Proxy.self)
     try DBUtils.hardDelete(id, type: RuleSet.self)

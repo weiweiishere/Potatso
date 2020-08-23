@@ -53,7 +53,7 @@ class RecentRequestsVC: UIViewController, UITableViewDataSource, UITableViewDele
     
     func updateUI(_ requestString: String?) {
         if let responseStr = requestString, let jsonArray = responseStr.jsonArray() {
-            self.requests = jsonArray.reversed().filter({ ($0 as? [String : AnyObject]) != nil }).flatMap({ Request(dict: $0 as! [String : AnyObject]) })
+            self.requests = jsonArray.reversed().filter({ ($0 as? [String : AnyObject]) != nil }).compactMap({ Request(dict: $0 as! [String : AnyObject]) })
         }else {
             self.requests = []
         }
@@ -127,7 +127,7 @@ class RecentRequestsVC: UIViewController, UITableViewDataSource, UITableViewDele
         v.tableHeaderView = UIView()
         v.separatorStyle = .singleLine
         v.estimatedRowHeight = 70
-        v.rowHeight = UITableViewAutomaticDimension
+        v.rowHeight = UITableView.automaticDimension
         return v
     }()
     
