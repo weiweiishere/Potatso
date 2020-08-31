@@ -43,7 +43,7 @@ class SettingsViewController: FormViewController, MFMailComposeViewControllerDel
         form.delegate = nil
         form.removeAll()
         form +++ generateManualSection()
-        form +++ generateSyncSection()
+        //rc: form +++ generateSyncSection()
         form +++ generateRateSection()
         form +++ generateAboutSection()
         form.delegate = self
@@ -61,29 +61,29 @@ class SettingsViewController: FormViewController, MFMailComposeViewControllerDel
         return section
     }
 
-    func generateSyncSection() -> Section {
-        let section = Section()
-        section
-            <<< ActionRow() {
-                $0.title = "Sync".localized()
-                $0.value = SyncManager.shared.currentSyncServiceType.rawValue
-            }.onCellSelection({ [unowned self] (cell, row) -> () in
-                SyncManager.shared.showSyncVC(inVC: self)
-            })
-            <<< ActionRow() {
-                $0.title = "Import From URL".localized()
-            }.onCellSelection({ [unowned self] (cell, row) -> () in
-                let importer = Importer(vc: self)
-                importer.importConfigFromUrl()
-            })
-            <<< ActionRow() {
-                $0.title = "Import From QRCode".localized()
-            }.onCellSelection({ [unowned self] (cell, row) -> () in
-                let importer = Importer(vc: self)
-                importer.importConfigFromQRCode()
-            })
-        return section
-    }
+    //rc:    func generateSyncSection() -> Section {
+//        let section = Section()
+//        section
+//            <<< ActionRow() {
+//                $0.title = "Sync".localized()
+//                $0.value = SyncManager.shared.currentSyncServiceType.rawValue
+//            }.onCellSelection({ [unowned self] (cell, row) -> () in
+//                SyncManager.shared.showSyncVC(inVC: self)
+//            })
+//            <<< ActionRow() {
+//                $0.title = "Import From URL".localized()
+//            }.onCellSelection({ [unowned self] (cell, row) -> () in
+//                let importer = Importer(vc: self)
+//                importer.importConfigFromUrl()
+//            })
+//            <<< ActionRow() {
+//                $0.title = "Import From QRCode".localized()
+//            }.onCellSelection({ [unowned self] (cell, row) -> () in
+//                let importer = Importer(vc: self)
+//                importer.importConfigFromQRCode()
+//            })
+//        return section
+//    }
 
     func generateRateSection() -> Section {
         let section = Section()

@@ -29,7 +29,7 @@ target "Potatso" do
     pod 'AsyncSwift'
     pod 'SwiftColor'
     pod 'Appirater'
-    pod 'Eureka'
+    pod 'Eureka', '~> 5.0'
     pod 'MBProgressHUD'
     pod 'CallbackURLKit', :path => "./Library/CallbackURLKit"
     pod 'ICDMaterialActivityIndicatorView', '~> 0.1.0'
@@ -38,7 +38,7 @@ target "Potatso" do
     pod 'ISO8601DateFormatter', '~> 0.8'
     pod 'Alamofire'
     pod 'AlamofireObjectMapper', '~> 5.0'
-    pod 'CocoaLumberjack/Swift', '~> 3.0.0'
+    pod 'CocoaLumberjack/Swift', '~> 3.6'
     pod 'PSOperations'
     tunnel
     library
@@ -74,7 +74,4 @@ target "PotatsoModel" do
     model
 end
 
-target "PotatsoLibraryTests" do
-    library
-end
 

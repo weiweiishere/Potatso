@@ -16,10 +16,10 @@ import Realm
 
 class DataInitializer: NSObject, AppLifeCycleProtocol {
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Manager.sharedManager.setup()
         CloudSetManager.shared.update()
-        sync()
+        //rc: sync()
         return true
     }
     
@@ -33,11 +33,11 @@ class DataInitializer: NSObject, AppLifeCycleProtocol {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         Receipt.shared.validate()
-        sync()
+        //rc: sync()
     }
 
-    func sync() {
-        SyncManager.shared.sync()
-    }
+    //rc:    func sync() {
+//        SyncManager.shared.sync()
+//    }
 
 }
