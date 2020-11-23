@@ -346,6 +346,15 @@
 		B8EAC6511D40D01C0046963C /* maxminddb_config.h in Headers */ = {isa = PBXBuildFile; fileRef = B8EAC5C71D40D01C0046963C /* maxminddb_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8EAC67F1D40D01C0046963C /* maxminddb-compat-util.h in Headers */ = {isa = PBXBuildFile; fileRef = B8EAC5FA1D40D01C0046963C /* maxminddb-compat-util.h */; };
 		B8EAC6801D40D01C0046963C /* maxminddb.c in Sources */ = {isa = PBXBuildFile; fileRef = B8EAC5FB1D40D01C0046963C /* maxminddb.c */; };
+		ED78922D2551A600005A9ED3 /* Potatso_SS_ClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78922C2551A600005A9ED3 /* Potatso_SS_ClipApp.swift */; };
+		ED78922F2551A600005A9ED3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78922E2551A600005A9ED3 /* ContentView.swift */; };
+		ED7892312551A605005A9ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7892302551A605005A9ED3 /* Assets.xcassets */; };
+		ED7892342551A605005A9ED3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7892332551A605005A9ED3 /* Preview Assets.xcassets */; };
+		ED7892362551A605005A9ED3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7892352551A605005A9ED3 /* Persistence.swift */; };
+		ED7892392551A605005A9ED3 /* Potatso_SS_Clip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED7892372551A605005A9ED3 /* Potatso_SS_Clip.xcdatamodeld */; };
+		ED7892452551A605005A9ED3 /* Potatso_SS_ClipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7892442551A605005A9ED3 /* Potatso_SS_ClipTests.swift */; };
+		ED7892502551A605005A9ED3 /* Potatso_SS_ClipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78924F2551A605005A9ED3 /* Potatso_SS_ClipUITests.swift */; };
+		ED7892542551A605005A9ED3 /* Potatso SS Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = ED78922A2551A600005A9ED3 /* Potatso SS Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,6 +364,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = B8DEFD7A1CE9C923003FC706;
 			remoteInfo = ShadowPath;
+		};
+		ED7892412551A605005A9ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8DEFD721CE9C923003FC706 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED7892292551A600005A9ED3;
+			remoteInfo = "Potatso SS Clip";
+		};
+		ED78924C2551A605005A9ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8DEFD721CE9C923003FC706 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED7892292551A600005A9ED3;
+			remoteInfo = "Potatso SS Clip";
+		};
+		ED7892522551A605005A9ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8DEFD721CE9C923003FC706 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED7892292551A600005A9ED3;
+			remoteInfo = "Potatso SS Clip";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -368,6 +398,17 @@
 				B82847CF1CEB177C00820456 /* ShadowPath.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7892552551A605005A9ED3 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				ED7892542551A605005A9ED3 /* Potatso SS Clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -719,6 +760,21 @@
 		B8EAC5FB1D40D01C0046963C /* maxminddb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maxminddb.c; sourceTree = "<group>"; };
 		E46E159020A9755B00E89AF1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		E46E159120A9755C00E89AF1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		ED78922A2551A600005A9ED3 /* Potatso SS Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Potatso SS Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED78922C2551A600005A9ED3 /* Potatso_SS_ClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potatso_SS_ClipApp.swift; sourceTree = "<group>"; };
+		ED78922E2551A600005A9ED3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED7892302551A605005A9ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED7892332551A605005A9ED3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED7892352551A605005A9ED3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ED7892382551A605005A9ED3 /* Potatso_SS_Clip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Potatso_SS_Clip.xcdatamodel; sourceTree = "<group>"; };
+		ED78923A2551A605005A9ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED78923B2551A605005A9ED3 /* Potatso_SS_Clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Potatso_SS_Clip.entitlements; sourceTree = "<group>"; };
+		ED7892402551A605005A9ED3 /* Potatso SS ClipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Potatso SS ClipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7892442551A605005A9ED3 /* Potatso_SS_ClipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potatso_SS_ClipTests.swift; sourceTree = "<group>"; };
+		ED7892462551A605005A9ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED78924B2551A605005A9ED3 /* Potatso SS ClipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Potatso SS ClipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED78924F2551A605005A9ED3 /* Potatso_SS_ClipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potatso_SS_ClipUITests.swift; sourceTree = "<group>"; };
+		ED7892512551A605005A9ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -739,6 +795,27 @@
 				B82D7D791CEC6BCE00357F5F /* libexpat.a in Frameworks */,
 				B81887A51D2BFC1B00E41C89 /* libcrypto.a in Frameworks */,
 				B82847AF1CEB125500820456 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7892272551A600005A9ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED78923D2551A605005A9ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7892482551A605005A9ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1343,6 +1420,9 @@
 			children = (
 				B8DEFD7D1CE9C923003FC706 /* ShadowPath */,
 				B82847B51CEB14B000820456 /* ShadowPathDemo */,
+				ED78922B2551A600005A9ED3 /* Potatso SS Clip */,
+				ED7892432551A605005A9ED3 /* Potatso SS ClipTests */,
+				ED78924E2551A605005A9ED3 /* Potatso SS ClipUITests */,
 				B8DEFD7C1CE9C923003FC706 /* Products */,
 				B82847AE1CEB125500820456 /* libz.tbd */,
 			);
@@ -1353,6 +1433,9 @@
 			children = (
 				B8DEFD7B1CE9C923003FC706 /* ShadowPath.framework */,
 				B82847B41CEB14B000820456 /* ShadowPathDemo.app */,
+				ED78922A2551A600005A9ED3 /* Potatso SS Clip.app */,
+				ED7892402551A605005A9ED3 /* Potatso SS ClipTests.xctest */,
+				ED78924B2551A605005A9ED3 /* Potatso SS ClipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1397,6 +1480,47 @@
 				B8EAC5FB1D40D01C0046963C /* maxminddb.c */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		ED78922B2551A600005A9ED3 /* Potatso SS Clip */ = {
+			isa = PBXGroup;
+			children = (
+				ED78922C2551A600005A9ED3 /* Potatso_SS_ClipApp.swift */,
+				ED78922E2551A600005A9ED3 /* ContentView.swift */,
+				ED7892302551A605005A9ED3 /* Assets.xcassets */,
+				ED7892352551A605005A9ED3 /* Persistence.swift */,
+				ED78923A2551A605005A9ED3 /* Info.plist */,
+				ED78923B2551A605005A9ED3 /* Potatso_SS_Clip.entitlements */,
+				ED7892372551A605005A9ED3 /* Potatso_SS_Clip.xcdatamodeld */,
+				ED7892322551A605005A9ED3 /* Preview Content */,
+			);
+			path = "Potatso SS Clip";
+			sourceTree = "<group>";
+		};
+		ED7892322551A605005A9ED3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED7892332551A605005A9ED3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED7892432551A605005A9ED3 /* Potatso SS ClipTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED7892442551A605005A9ED3 /* Potatso_SS_ClipTests.swift */,
+				ED7892462551A605005A9ED3 /* Info.plist */,
+			);
+			path = "Potatso SS ClipTests";
+			sourceTree = "<group>";
+		};
+		ED78924E2551A605005A9ED3 /* Potatso SS ClipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED78924F2551A605005A9ED3 /* Potatso_SS_ClipUITests.swift */,
+				ED7892512551A605005A9ED3 /* Info.plist */,
+			);
+			path = "Potatso SS ClipUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1619,11 +1743,13 @@
 				B82847B11CEB14B000820456 /* Frameworks */,
 				B82847B21CEB14B000820456 /* Resources */,
 				B82847D21CEB177D00820456 /* Embed Frameworks */,
+				ED7892552551A605005A9ED3 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				B82847D11CEB177C00820456 /* PBXTargetDependency */,
+				ED7892532551A605005A9ED3 /* PBXTargetDependency */,
 			);
 			name = ShadowPathDemo;
 			productName = ShadowPathDemo;
@@ -1648,12 +1774,66 @@
 			productReference = B8DEFD7B1CE9C923003FC706 /* ShadowPath.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		ED7892292551A600005A9ED3 /* Potatso SS Clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED78925C2551A605005A9ED3 /* Build configuration list for PBXNativeTarget "Potatso SS Clip" */;
+			buildPhases = (
+				ED7892262551A600005A9ED3 /* Sources */,
+				ED7892272551A600005A9ED3 /* Frameworks */,
+				ED7892282551A600005A9ED3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Potatso SS Clip";
+			productName = "Potatso SS Clip";
+			productReference = ED78922A2551A600005A9ED3 /* Potatso SS Clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		ED78923F2551A605005A9ED3 /* Potatso SS ClipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED78925D2551A605005A9ED3 /* Build configuration list for PBXNativeTarget "Potatso SS ClipTests" */;
+			buildPhases = (
+				ED78923C2551A605005A9ED3 /* Sources */,
+				ED78923D2551A605005A9ED3 /* Frameworks */,
+				ED78923E2551A605005A9ED3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED7892422551A605005A9ED3 /* PBXTargetDependency */,
+			);
+			name = "Potatso SS ClipTests";
+			productName = "Potatso SS ClipTests";
+			productReference = ED7892402551A605005A9ED3 /* Potatso SS ClipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED78924A2551A605005A9ED3 /* Potatso SS ClipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED78925E2551A605005A9ED3 /* Build configuration list for PBXNativeTarget "Potatso SS ClipUITests" */;
+			buildPhases = (
+				ED7892472551A605005A9ED3 /* Sources */,
+				ED7892482551A605005A9ED3 /* Frameworks */,
+				ED7892492551A605005A9ED3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED78924D2551A605005A9ED3 /* PBXTargetDependency */,
+			);
+			name = "Potatso SS ClipUITests";
+			productName = "Potatso SS ClipUITests";
+			productReference = ED78924B2551A605005A9ED3 /* Potatso SS ClipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B8DEFD721CE9C923003FC706 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = TouchingApp;
 				TargetAttributes = {
@@ -1662,6 +1842,22 @@
 					};
 					B8DEFD7A1CE9C923003FC706 = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					ED7892292551A600005A9ED3 = {
+						CreatedOnToolsVersion = 12.1;
+						ProvisioningStyle = Automatic;
+					};
+					ED78923F2551A605005A9ED3 = {
+						CreatedOnToolsVersion = 12.1;
+						DevelopmentTeam = 5DU6584PSY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED7892292551A600005A9ED3;
+					};
+					ED78924A2551A605005A9ED3 = {
+						CreatedOnToolsVersion = 12.1;
+						DevelopmentTeam = 5DU6584PSY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED7892292551A600005A9ED3;
 					};
 				};
 			};
@@ -1682,6 +1878,9 @@
 			targets = (
 				B8DEFD7A1CE9C923003FC706 /* ShadowPath */,
 				B82847B31CEB14B000820456 /* ShadowPathDemo */,
+				ED7892292551A600005A9ED3 /* Potatso SS Clip */,
+				ED78923F2551A605005A9ED3 /* Potatso SS ClipTests */,
+				ED78924A2551A605005A9ED3 /* Potatso SS ClipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1703,6 +1902,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81887591D2BFC1B00E41C89 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7892282551A600005A9ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7892342551A605005A9ED3 /* Preview Assets.xcassets in Resources */,
+				ED7892312551A605005A9ED3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED78923E2551A605005A9ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7892492551A605005A9ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1851,6 +2073,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED7892262551A600005A9ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7892362551A605005A9ED3 /* Persistence.swift in Sources */,
+				ED78922F2551A600005A9ED3 /* ContentView.swift in Sources */,
+				ED7892392551A605005A9ED3 /* Potatso_SS_Clip.xcdatamodeld in Sources */,
+				ED78922D2551A600005A9ED3 /* Potatso_SS_ClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED78923C2551A605005A9ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7892452551A605005A9ED3 /* Potatso_SS_ClipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED7892472551A605005A9ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7892502551A605005A9ED3 /* Potatso_SS_ClipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1858,6 +2107,21 @@
 			isa = PBXTargetDependency;
 			target = B8DEFD7A1CE9C923003FC706 /* ShadowPath */;
 			targetProxy = B82847D01CEB177C00820456 /* PBXContainerItemProxy */;
+		};
+		ED7892422551A605005A9ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED7892292551A600005A9ED3 /* Potatso SS Clip */;
+			targetProxy = ED7892412551A605005A9ED3 /* PBXContainerItemProxy */;
+		};
+		ED78924D2551A605005A9ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED7892292551A600005A9ED3 /* Potatso SS Clip */;
+			targetProxy = ED78924C2551A605005A9ED3 /* PBXContainerItemProxy */;
+		};
+		ED7892532551A605005A9ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED7892292551A600005A9ED3 /* Potatso SS Clip */;
+			targetProxy = ED7892522551A605005A9ED3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1888,6 +2152,7 @@
 		B82847C91CEB14B000820456 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShadowPathDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1900,6 +2165,7 @@
 		B82847CA1CEB14B000820456 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShadowPathDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2072,6 +2338,234 @@
 			};
 			name = Release;
 		};
+		ED7892562551A605005A9ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Potatso SS Clip/Potatso_SS_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Potatso SS Clip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Potatso SS Clip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.ShadowPathDemo.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED7892572551A605005A9ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Potatso SS Clip/Potatso_SS_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Potatso SS Clip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Potatso SS Clip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.ShadowPathDemo.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED7892582551A605005A9ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DU6584PSY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Potatso SS ClipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.wasin.ShadowPathDemo.Potatso-SS-ClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potatso SS Clip.app/Potatso SS Clip";
+			};
+			name = Debug;
+		};
+		ED7892592551A605005A9ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DU6584PSY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Potatso SS ClipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.wasin.ShadowPathDemo.Potatso-SS-ClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potatso SS Clip.app/Potatso SS Clip";
+			};
+			name = Release;
+		};
+		ED78925A2551A605005A9ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DU6584PSY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Potatso SS ClipUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.wasin.ShadowPathDemo.Potatso-SS-ClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Potatso SS Clip";
+			};
+			name = Debug;
+		};
+		ED78925B2551A605005A9ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DU6584PSY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Potatso SS ClipUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.wasin.ShadowPathDemo.Potatso-SS-ClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Potatso SS Clip";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2102,7 +2596,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		ED78925C2551A605005A9ED3 /* Build configuration list for PBXNativeTarget "Potatso SS Clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7892562551A605005A9ED3 /* Debug */,
+				ED7892572551A605005A9ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED78925D2551A605005A9ED3 /* Build configuration list for PBXNativeTarget "Potatso SS ClipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7892582551A605005A9ED3 /* Debug */,
+				ED7892592551A605005A9ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED78925E2551A605005A9ED3 /* Build configuration list for PBXNativeTarget "Potatso SS ClipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED78925A2551A605005A9ED3 /* Debug */,
+				ED78925B2551A605005A9ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ED7892372551A605005A9ED3 /* Potatso_SS_Clip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ED7892382551A605005A9ED3 /* Potatso_SS_Clip.xcdatamodel */,
+			);
+			currentVersion = ED7892382551A605005A9ED3 /* Potatso_SS_Clip.xcdatamodel */;
+			path = Potatso_SS_Clip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B8DEFD721CE9C923003FC706 /* Project object */;
 }

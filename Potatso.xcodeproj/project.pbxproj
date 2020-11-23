@@ -265,6 +265,27 @@
 			remoteGlobalIDString = B82847B41CEB14B000820456;
 			remoteInfo = ShadowPathDemo;
 		};
+		ED601818255F983800FDA28B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B86B08E31D17F84900613014 /* ShadowPath.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED78922A2551A600005A9ED3;
+			remoteInfo = "Potatso SS Clip";
+		};
+		ED60181A255F983800FDA28B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B86B08E31D17F84900613014 /* ShadowPath.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED7892402551A605005A9ED3;
+			remoteInfo = "Potatso SS ClipTests";
+		};
+		ED60181C255F983800FDA28B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B86B08E31D17F84900613014 /* ShadowPath.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED78924B2551A605005A9ED3;
+			remoteInfo = "Potatso SS ClipUITests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1927,6 +1948,9 @@
 			children = (
 				B86B08E91D17F84900613014 /* ShadowPath.framework */,
 				B86B08EB1D17F84900613014 /* ShadowPathDemo.app */,
+				ED601819255F983800FDA28B /* Potatso SS Clip.app */,
+				ED60181B255F983800FDA28B /* Potatso SS ClipTests.xctest */,
+				ED60181D255F983800FDA28B /* Potatso SS ClipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2295,13 +2319,13 @@
 			};
 			buildConfigurationList = 9B0CFA061C1C0B1A007BD7C6 /* Build configuration list for PBXProject "Potatso" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				Base,
 				"zh-Hans",
 				"zh-Hant",
+				en,
 			);
 			mainGroup = 9B0CFA021C1C0B1A007BD7C6;
 			productRefGroup = 9B0CFA0C1C1C0B1B007BD7C6 /* Products */;
@@ -2339,6 +2363,27 @@
 			fileType = wrapper.application;
 			path = ShadowPathDemo.app;
 			remoteRef = B86B08EA1D17F84900613014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED601819255F983800FDA28B /* Potatso SS Clip.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Potatso SS Clip.app";
+			remoteRef = ED601818255F983800FDA28B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED60181B255F983800FDA28B /* Potatso SS ClipTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Potatso SS ClipTests.xctest";
+			remoteRef = ED60181A255F983800FDA28B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED60181D255F983800FDA28B /* Potatso SS ClipUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Potatso SS ClipUITests.xctest";
+			remoteRef = ED60181C255F983800FDA28B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -3056,9 +3101,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Potatso/Potatso.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 5DU6584PSY;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3085,6 +3131,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @rpath/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/ShadowPath/ShadowPath/libopenssl/lib";
+				MARKETING_VERSION = 1.0.1;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = group.ww.potatso;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3105,9 +3152,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Potatso/Potatso.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5DU6584PSY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3129,6 +3177,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @rpath/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/ShadowPath/ShadowPath/libopenssl/lib";
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = group.ww.potatso;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

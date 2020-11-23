@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Potatso</string>
+	<string>ShadowPathDemo</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,58 +15,38 @@
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
-	<string>APPL</string>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>potatso</string>
-			</array>
-		</dict>
-	</array>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
+	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSAppTransportSecurity</key>
+	<key>NSAppClip</key>
 	<dict>
-		<key>NSAllowsArbitraryLoads</key>
+		<key>NSAppClipRequestEphemeralUserNotification</key>
+		<false/>
+		<key>NSAppClipRequestLocationConfirmation</key>
+		<false/>
+	</dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
 		<true/>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>Scan QRCode to import configuration</string>
-	<key>PotatsoInternal</key>
-	<dict>
-		<key>GroupIdentifier</key>
-		<string>group.io.wasin.potatso</string>
-		<key>LogglyAPIKey</key>
-		<string>488db635-457d-48f4-8818-ffcd489f588b</string>
-	</dict>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-	</array>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UILaunchScreen</key>
+	<dict/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
-		<string>gamekit</string>
 	</array>
-	<key>UIStatusBarHidden</key>
-	<false/>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleDefault</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
