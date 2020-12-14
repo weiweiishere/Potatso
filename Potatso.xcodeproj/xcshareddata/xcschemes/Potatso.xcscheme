@@ -92,7 +92,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      customArchiveName = "adhoc-potatso-all-devices"
+      customArchiveName = "store-potatso-101-2"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

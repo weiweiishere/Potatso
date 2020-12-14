@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1AAC61E76574642AD2BF3E5E /* Pods_TodayWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946F065271ABB55B741DA5E5 /* Pods_TodayWidget.framework */; };
-		1ED659061E05E88C00D4BEE3 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED659051E05E88C00D4BEE3 /* GameKit.framework */; };
 		1EE85E0C2000639700C5DB6C /* InfoInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE85E0B2000639700C5DB6C /* InfoInternal.swift */; };
 		1EEBB8771FFFD4B500EB33C3 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEBB8761FFFD4B500EB33C3 /* NetworkExtension.framework */; };
 		1EEBB8781FFFD52700EB33C3 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEBB8761FFFD4B500EB33C3 /* NetworkExtension.framework */; };
@@ -199,6 +198,14 @@
 		B8F7AE3E1D5F178A005CA41E /* CloudSetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F7AE3D1D5F178A005CA41E /* CloudSetManager.swift */; };
 		BEC06AF748B92B7443F82556 /* Pods_PotatsoLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF9F2A6320F1AC7B894EFB9 /* Pods_PotatsoLibrary.framework */; };
 		D9840AAFF707D5FEE15E786F /* Pods_Potatso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A90249DDE27A9D618C3640 /* Pods_Potatso.framework */; };
+		ED61EE93257FCB7C00772E2C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED659051E05E88C00D4BEE3 /* GameKit.framework */; };
+		EDC7EB1F25840541004F8DA5 /* PotatsoClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7EB1E25840541004F8DA5 /* PotatsoClipApp.swift */; };
+		EDC7EB2125840541004F8DA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7EB2025840541004F8DA5 /* ContentView.swift */; };
+		EDC7EB2325840545004F8DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC7EB2225840545004F8DA5 /* Assets.xcassets */; };
+		EDC7EB2625840545004F8DA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC7EB2525840545004F8DA5 /* Preview Assets.xcassets */; };
+		EDC7EB2825840545004F8DA5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7EB2725840545004F8DA5 /* Persistence.swift */; };
+		EDC7EB2B25840545004F8DA5 /* PotatsoClip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDC7EB2925840545004F8DA5 /* PotatsoClip.xcdatamodeld */; };
+		EDC7EB3025840546004F8DA5 /* PotatsoClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = EDC7EB1C25840541004F8DA5 /* PotatsoClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +293,13 @@
 			remoteGlobalIDString = ED78924B2551A605005A9ED3;
 			remoteInfo = "Potatso SS ClipUITests";
 		};
+		EDC7EB2E25840545004F8DA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B0CFA031C1C0B1A007BD7C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC7EB1B25840541004F8DA5;
+			remoteInfo = PotatsoClip;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -314,6 +328,17 @@
 				9BDA62631CAE2576007F2581 /* PacketProcessor.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED61EC582575B44800772E2C /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				EDC7EB3025840546004F8DA5 /* PotatsoClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -892,6 +917,28 @@
 		E46E159320A9755C00E89AF1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E46E159620A9755D00E89AF1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E7FC33EE698C6FD2B3180AB4 /* Pods-PotatsoLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotatsoLibrary.release.xcconfig"; path = "Target Support Files/Pods-PotatsoLibrary/Pods-PotatsoLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		ED61EC75257ED34600772E2C /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61EC84257ED40E00772E2C /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61EC87257ED41700772E2C /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61ECBF257ED60900772E2C /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61ECD8257ED73A00772E2C /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61ED10257ED88800772E2C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61ED13257ED89400772E2C /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61ED16257ED8E700772E2C /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61ED19257ED91000772E2C /* Pods_Potatso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Potatso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61ED98257EDF1700772E2C /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61EDA2257EDF8400772E2C /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61EDB5257EE05300772E2C /* Pods_Potatso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Potatso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED61EE22257EF04B00772E2C /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC7EB1C25840541004F8DA5 /* PotatsoClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotatsoClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC7EB1E25840541004F8DA5 /* PotatsoClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotatsoClipApp.swift; sourceTree = "<group>"; };
+		EDC7EB2025840541004F8DA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EDC7EB2225840545004F8DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDC7EB2525840545004F8DA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDC7EB2725840545004F8DA5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EDC7EB2A25840545004F8DA5 /* potatsoClip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = potatsoClip.xcdatamodel; sourceTree = "<group>"; };
+		EDC7EB2C25840545004F8DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC7EB2D25840545004F8DA5 /* PotatsoClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PotatsoClip.entitlements; sourceTree = "<group>"; };
 		F418F761ED5A1D6D44F6B978 /* Pods_PacketTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F972382A1FDCA6E6CAF074AD /* Pods-PotatsoLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotatsoLibraryTests.debug.xcconfig"; path = "Target Support Files/Pods-PotatsoLibraryTests/Pods-PotatsoLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -905,12 +952,12 @@
 				1EEBB8771FFFD4B500EB33C3 /* NetworkExtension.framework in Frameworks */,
 				9BC600241CB2921C00E5EA61 /* PotatsoBase.framework in Frameworks */,
 				9BDA62621CAE2576007F2581 /* PacketProcessor.framework in Frameworks */,
-				1ED659061E05E88C00D4BEE3 /* GameKit.framework in Frameworks */,
 				9B9B15C41C21595B000B6541 /* PotatsoLibrary.framework in Frameworks */,
 				9BC6FFF11CB28B4B00E5EA61 /* PotatsoModel.framework in Frameworks */,
 				B8822CD31D2B81C400AD252C /* libcrypto.a in Frameworks */,
 				B8822CD41D2B81C400AD252C /* libssl.a in Frameworks */,
 				D9840AAFF707D5FEE15E786F /* Pods_Potatso.framework in Frameworks */,
+				ED61EE93257FCB7C00772E2C /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +1029,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDC7EB1925840541004F8DA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1006,6 +1060,7 @@
 				9BDA625C1CAE2576007F2581 /* PacketProcessor */,
 				9BC6FFEB1CB28B4B00E5EA61 /* PotatsoModel */,
 				9BC6001E1CB2921C00E5EA61 /* PotatsoBase */,
+				EDC7EB1D25840541004F8DA5 /* PotatsoClip */,
 				9B0CFA0C1C1C0B1B007BD7C6 /* Products */,
 				C8B2149E8757C44C469576D2 /* Frameworks */,
 				D1DC81895BDA8D1315435055 /* Pods */,
@@ -1023,6 +1078,7 @@
 				9BC6FFEA1CB28B4B00E5EA61 /* PotatsoModel.framework */,
 				9BC6001D1CB2921C00E5EA61 /* PotatsoBase.framework */,
 				9B8193B21CBCFEE700BE320D /* TodayWidget.appex */,
+				EDC7EB1C25840541004F8DA5 /* PotatsoClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1968,6 +2024,19 @@
 		C8B2149E8757C44C469576D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED61EE22257EF04B00772E2C /* Eureka.framework */,
+				ED61EDB5257EE05300772E2C /* Pods_Potatso.framework */,
+				ED61EDA2257EDF8400772E2C /* Eureka.framework */,
+				ED61ED98257EDF1700772E2C /* Eureka.framework */,
+				ED61ED19257ED91000772E2C /* Pods_Potatso.framework */,
+				ED61ED16257ED8E700772E2C /* Eureka.framework */,
+				ED61ED13257ED89400772E2C /* ObjectMapper.framework */,
+				ED61ED10257ED88800772E2C /* Alamofire.framework */,
+				ED61ECD8257ED73A00772E2C /* Eureka.framework */,
+				ED61ECBF257ED60900772E2C /* Eureka.framework */,
+				ED61EC87257ED41700772E2C /* RealmSwift.framework */,
+				ED61EC84257ED40E00772E2C /* Realm.framework */,
+				ED61EC75257ED34600772E2C /* Eureka.framework */,
 				1EEBB8761FFFD4B500EB33C3 /* NetworkExtension.framework */,
 				1ED659051E05E88C00D4BEE3 /* GameKit.framework */,
 				B8822CD11D2B81C400AD252C /* libcrypto.a */,
@@ -2005,6 +2074,29 @@
 				DBA0F5ED794D8E9E7D42AD50 /* Pods-TodayWidget.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDC7EB1D25840541004F8DA5 /* PotatsoClip */ = {
+			isa = PBXGroup;
+			children = (
+				EDC7EB1E25840541004F8DA5 /* PotatsoClipApp.swift */,
+				EDC7EB2025840541004F8DA5 /* ContentView.swift */,
+				EDC7EB2225840545004F8DA5 /* Assets.xcassets */,
+				EDC7EB2725840545004F8DA5 /* Persistence.swift */,
+				EDC7EB2C25840545004F8DA5 /* Info.plist */,
+				EDC7EB2D25840545004F8DA5 /* PotatsoClip.entitlements */,
+				EDC7EB2925840545004F8DA5 /* PotatsoClip.xcdatamodeld */,
+				EDC7EB2425840545004F8DA5 /* Preview Content */,
+			);
+			path = PotatsoClip;
+			sourceTree = "<group>";
+		};
+		EDC7EB2425840545004F8DA5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EDC7EB2525840545004F8DA5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2063,6 +2155,7 @@
 				9B8706081C1D788F00651424 /* Embed App Extensions */,
 				9B9B15821C1ECADF000B6541 /* Embed Frameworks */,
 				370EDA38A910ADE67C6422B1 /* [CP] Embed Pods Frameworks */,
+				ED61EC582575B44800772E2C /* Embed App Clips */,
 			);
 			buildRules = (
 			);
@@ -2073,6 +2166,7 @@
 				9BC6FFF01CB28B4B00E5EA61 /* PBXTargetDependency */,
 				9BC600231CB2921C00E5EA61 /* PBXTargetDependency */,
 				9B8193BD1CBCFEE700BE320D /* PBXTargetDependency */,
+				EDC7EB2F25840545004F8DA5 /* PBXTargetDependency */,
 			);
 			name = Potatso;
 			productName = Potatso;
@@ -2211,13 +2305,30 @@
 			productReference = 9BDA625B1CAE2576007F2581 /* PacketProcessor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EDC7EB1B25840541004F8DA5 /* PotatsoClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC7EB3125840546004F8DA5 /* Build configuration list for PBXNativeTarget "PotatsoClip" */;
+			buildPhases = (
+				EDC7EB1825840541004F8DA5 /* Sources */,
+				EDC7EB1925840541004F8DA5 /* Frameworks */,
+				EDC7EB1A25840541004F8DA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PotatsoClip;
+			productName = PotatsoClip;
+			productReference = EDC7EB1C25840541004F8DA5 /* PotatsoClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9B0CFA031C1C0B1A007BD7C6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = TouchingApp;
 				TargetAttributes = {
@@ -2315,6 +2426,11 @@
 						DevelopmentTeam = 236Q8XURWN;
 						LastSwiftMigration = 0820;
 					};
+					EDC7EB1B25840541004F8DA5 = {
+						CreatedOnToolsVersion = 12.2;
+						DevelopmentTeam = 5DU6584PSY;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 9B0CFA061C1C0B1A007BD7C6 /* Build configuration list for PBXProject "Potatso" */;
@@ -2346,6 +2462,7 @@
 				9BDA625A1CAE2576007F2581 /* PacketProcessor */,
 				9BC6FFE91CB28B4B00E5EA61 /* PotatsoModel */,
 				9BC6001C1CB2921C00E5EA61 /* PotatsoBase */,
+				EDC7EB1B25840541004F8DA5 /* PotatsoClip */,
 			);
 		};
 /* End PBXProject section */
@@ -2452,6 +2569,15 @@
 			files = (
 				9BDA65771CAE25E0007F2581 /* msgproto.bproto in Resources */,
 				9BDA65731CAE25E0007F2581 /* addr.bproto in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC7EB1A25840541004F8DA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC7EB2625840545004F8DA5 /* Preview Assets.xcassets in Resources */,
+				EDC7EB2325840545004F8DA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2922,6 +3048,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDC7EB1825840541004F8DA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC7EB2825840545004F8DA5 /* Persistence.swift in Sources */,
+				EDC7EB2125840541004F8DA5 /* ContentView.swift in Sources */,
+				EDC7EB2B25840545004F8DA5 /* PotatsoClip.xcdatamodeld in Sources */,
+				EDC7EB1F25840541004F8DA5 /* PotatsoClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2959,6 +3096,11 @@
 			isa = PBXTargetDependency;
 			target = 9BDA625A1CAE2576007F2581 /* PacketProcessor */;
 			targetProxy = 9BDA62601CAE2576007F2581 /* PBXContainerItemProxy */;
+		};
+		EDC7EB2F25840545004F8DA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC7EB1B25840541004F8DA5 /* PotatsoClip */;
+			targetProxy = EDC7EB2E25840545004F8DA5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3104,7 +3246,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 5DU6584PSY;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3155,9 +3297,15 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5DU6584PSY;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PotatsoLibrary",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/PotatsoLibrary",
@@ -3644,6 +3792,91 @@
 			};
 			name = Release;
 		};
+		EDC7EB3225840546004F8DA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PotatsoClip/PotatsoClip.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"PotatsoClip/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DU6584PSY;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PotatsoClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = group.ww.potatso.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDC7EB3325840546004F8DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PotatsoClip/PotatsoClip.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"PotatsoClip/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DU6584PSY;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PotatsoClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = group.ww.potatso.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3728,7 +3961,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		EDC7EB3125840546004F8DA5 /* Build configuration list for PBXNativeTarget "PotatsoClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC7EB3225840546004F8DA5 /* Debug */,
+				EDC7EB3325840546004F8DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDC7EB2925840545004F8DA5 /* PotatsoClip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDC7EB2A25840545004F8DA5 /* potatsoClip.xcdatamodel */,
+			);
+			currentVersion = EDC7EB2A25840545004F8DA5 /* potatsoClip.xcdatamodel */;
+			path = PotatsoClip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9B0CFA031C1C0B1A007BD7C6 /* Project object */;
 }
