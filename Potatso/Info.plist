@@ -33,6 +33,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -40,8 +42,18 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCalendarsUsageDescription</key>
+	<string>book a reminder in calendar</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Scan QRCode to import configuration</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>you can choose not to share health data</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>you can choose not to share health data</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>to improve your network connection</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>use QRCode in photo </string>
 	<key>PotatsoInternal</key>
 	<dict>
 		<key>GroupIdentifier</key>
